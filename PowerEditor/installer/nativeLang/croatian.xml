@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
     Croatian localization for Notepad++
-    Updated 16 January 2022 by Elvis Gambiraža (el.gambo@gmail.com)
+    Updated 20 February 2022 by Elvis Gambiraža (el.gambo@gmail.com)
     The most recent version of this file:
     https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/PowerEditor/installer/nativeLang/croatian.xml
     The comments are here for explanation, it's not necessary to translate them.
 -->
 <NotepadPlus>
-        <Native-Langue name="Hrvatski (Croatian)" filename="croatian.xml" version="8.2.1">
+        <Native-Langue name="Hrvatski (Croatian)" filename="croatian.xml" version="8.3">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -1012,6 +1012,15 @@ Vidi Notepad++ online priručnik (Preferences)."/>
                     <Item id="6721" name="Sredina"/>
                     <Item id="6722" name="Desno"/>
                     <Item id="6723" name="Dodati"/>
+                    <ComboBox id="6724">
+                        <Element name="Naziv datoteke s punim putom"/>
+                        <Element name="Naziv datoteke"/>
+                        <Element name="Mapa datoteke"/>
+                        <Element name="Stranica"/>
+                        <Element name="Kratki format datuma"/>
+                        <Element name="Dugi format datuma"/>
+                        <Element name="Vrijeme"/>
+                    </ComboBox>
                     <Item id="6725" name="Varijabla:"/>
                     <Item id="6727" name="Ovdje se prikazuju postavke varijabli"/>
                     <Item id="6728" name="Zaglavlje i podnožje"/>
@@ -1244,6 +1253,8 @@ Vidi Notepad++ online priručnik (Editing) za detalje."/>
             <DoDeleteOrNot title="Izbriši datoteku" message="Datoteka &quot;$STR_REPLACE$&quot;
 će biti premještena u Kantu za smeće kada ovaj dokument bude zatvoren.
 Nastaviti?"/>
+            <WantToOpenHugeFile title="Upozorenje pri otvaranju goleme datoteke" message="Učitavanje goleme datoteke od 2GB+ može potrajati dulje vrijeme.
+Želite li ju učitati?"/>
             <NoBackupDoSaveFile title="Spremanje" message="Vaša sigurnosna kopija datoteke ne može biti nađena (izbrisana izvana).
 Spremite ili će podaci biti izgubljeni.
 Želite li spremiti datoteku &quot;$STR_REPLACE$&quot; ?"/>
@@ -1262,6 +1273,7 @@ Ovu datoteku je izmijenio drugi program.
             <DocTooDirtyToMonitor title="Problem nadgledanja" message="Dokument je nečist. Molim spremite izmijene prije nadgledanja."/>
             <DocNoExistToMonitor title="Problem nadgledanja" message="Datoteka mora postojati da bi se nadgledala."/>
             <FileTooBigToOpen title="Problem s veličinom datoteke" message="Datoteka je prevelika da bi se otvorila u Notepadu++"/> <!-- HowToReproduce: Try to open a 4GB file (it's not easy to reproduce, it depends on your system). -->
+            <FileLoadingException title="Izuzetak koda: $STR_REPLACE$" message="Došlo je do greške pri učitavanju datoteke!"/>
             <CreateNewFileOrNot title="Kreiraj novu datoteku" message="&quot;$STR_REPLACE$&quot; ne postoji. Kreirati ju?"/>
             <CreateNewFileError title="Kreiraj novu datoteku" message="Ne mogu kreirati datoteku &quot;$STR_REPLACE$&quot;."/> <!-- HowToReproduce: this message prevents from system failure. It's hard to reproduce. -->
             <OpenFileError title="GREŠKA" message="Ne mogu otvoriti datoteku &quot;$STR_REPLACE$&quot;."/>
